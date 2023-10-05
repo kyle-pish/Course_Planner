@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>IWU Course Planner</title>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <ul class="nav-links">
+            <li><a href="https://issuu.com/illinoiswesleyanuniversity/docs/catalog_2023-2024">Official IWU Course
+                    Catalog (2023-2024)</a></li>
+            <li><a href="https://www.iwu.edu/">Wesleyan Website</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Illinois Wesleyan Course Planner</h1>
+        <div class="logo">
+            <img src="iwu-logo.png" alt="IWU Logo">
+        </div>
+        <div class="input-section">
+            <div class="box">
+                <input type="text" id="addClassInput" placeholder="Enter class name">
+                <button class="button" onclick="addClass()">Add</button>
+            </div>
+            <div class="box">
+                <input type="text" id="deleteClassInput" placeholder="Enter class name">
+                <button class="button" onclick="deleteClass()">Delete</button>
+            </div>
+            <div class="box">
+                <input type="text" id="addPrerequisiteInput" placeholder="Enter Class">
+                <input type="text" id="addPrerequisiteForInput" placeholder="Enter Prerequisite">
+                <button class="button" onclick="addPrerequisite()">Add Prerequisite</button>
+
+                <div class="box">
+                    <input type="text" id="deletePrerequisiteInput" placeholder="Enter class name">
+                    <input type="text" id="deletePrerequisiteForInput" placeholder="Enter prerequisite">
+                    <button onclick="deletePrerequisite()">Delete Prerequisite</button>
+                </div>
+            </div>
+        </div>
+        <ul id="classList"></ul>
+    </div>
+    <footer>Created by Kyle Pish 2023
+        <a href="https://kyle-pish.github.io/portfolio-project/">Portfolio Website</a>
+    </footer>
+</body>
+
+<script src="main.js"></script>
+
+</html>

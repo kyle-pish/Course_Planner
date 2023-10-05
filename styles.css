@@ -1,0 +1,142 @@
+body {
+  background-color: #2e6449;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+
+h1 {
+  color: black;
+}
+
+.logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+  color: black;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #2e6449;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2e6449;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.box {
+  margin: 20px;
+}
+
+.button:hover {
+  background-color: #002D04;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 5px 0;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  height: 15px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.nav-bar:hover {
+  height: 60px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  display: flex;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: lightslategray;
+  transform: translateY(5px);
+}
+
+.nav-links {
+  display: flex;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#classList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#classList li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#classList li:hover {
+  background-color: #e0e0e0;
+}
